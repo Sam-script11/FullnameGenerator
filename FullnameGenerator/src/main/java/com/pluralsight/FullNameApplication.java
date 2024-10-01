@@ -9,18 +9,18 @@ public class FullNameApplication {
 
         System.out.println("Please enter your name");
 
-        System.out.print("first name: " );
-        String firstName = keyboard.next();
+        System.out.print("first name: ");
+        String firstName = keyboard.nextLine();
 
-        System.out.println("Middle name: ");
-        String middleName = keyboard.next();
+        System.out.print("Middle name: ");
+        String middleName = keyboard.nextLine();
 
         System.out.println("last name: ");
-        String lastName = keyboard.next();
+        String lastName = keyboard.nextLine();
 
-        String name = "firstName|middleName|lastName";
-        String [] FullName = name.split("\\|");
-        System.out.println(name);
 
+            System.out.println("Full name: " + firstName +" " + middleName+ " " + lastName);
+
+        }
     }
-}
+
