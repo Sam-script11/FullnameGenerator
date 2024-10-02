@@ -11,28 +11,29 @@ public class Score {
 
         String [] tokens1 = input.split(Pattern.quote(":"));
         String [] tokens2 = input.split(Pattern.quote("|"));
-        String [] tokens3 = input.split(Pattern.quote(":"));
-        String Home = tokens1[0];
-        String Away = tokens2[1];
-        int homeScore = Integer.parseInt(tokens3[0]);
-        int awayScore = Integer.parseInt(tokens3[1]);
 
-        if( homeScore>awayScore){
-            System.out.println("Winner: "+ homeScore);
-        } else{
-            System.out.println("Winner: " + awayScore);
+        String Home = tokens2[1];
+
+        String [] homeScore = Home.split(Pattern.quote(":"));
+        String score = tokens2[0];
+        String[] awayScore = score.split(Pattern.quote(":"));
+
+        String a1 = awayScore[0];
+        String a2 = awayScore[1];
+
+        int num1 = Integer.parseInt(homeScore[0]);
+        int num2 = Integer. parseInt(tokens1[2]);
+
+
+
+        if(num1 > num2){
+            System.out.printf("Winner: %s",a1);
+        }else {
+            System.out.printf("Winner %s",a2);
         }
 
 
 
-
-
-//        String input = "111|Hot Chocolate (12-count)|21|4.99";
-//        String[] tokens = input.split(Pattern.quote("|"));
-//        int id = Integer.parseInt(tokens[0]);
-//        String name = tokens[1];
-//        int quantity = Integer.parseInt(tokens[2]);
-//        double price = Double.parseDouble(tokens[3]);
 
 
 
