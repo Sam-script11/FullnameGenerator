@@ -8,13 +8,13 @@ public class Score {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("please enter a game score: ");
         String input = keyboard.nextLine();
-
+        // splitting the syntax at : and |
         String [] tokens1 = input.split(Pattern.quote(":"));
         String [] tokens2 = input.split(Pattern.quote("|"));
 
-        String Home = tokens2[1];
+        String HomeAwayscores = tokens2[1];
 
-        String [] homeScore = Home.split(Pattern.quote(":"));
+        String [] homeScore = HomeAwayscores.split(Pattern.quote(":"));
         String score = tokens2[0];
         String[] awayScore = score.split(Pattern.quote(":"));
 
